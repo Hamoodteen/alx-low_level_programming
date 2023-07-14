@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
 /**
  * main - Entry point
  * Description: 'the program's description'
@@ -24,7 +23,7 @@ printf("%d is zero\n", n);
 }
 else if (n < 0)
 {
-printf("%d is negative", n);
+printf("%d is negative\n", n);
 }
 return (0);
 }

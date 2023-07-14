@@ -8,12 +8,12 @@
 int main(void)
 {
 int ch;
-for (ch = '0' ; ch <= '9' ; ch++)
+for (ch = '0' ; ch <= '8' ; ch++)
 {
 putchar(ch);
 putchar(',');
 putchar(' ');
 }
-putchar('\n');
+putchar('9');
 return (0);
 }

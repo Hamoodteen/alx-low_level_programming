@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /* more headers goes there */
 /**
@@ -13,6 +11,7 @@ char ch;
 for(ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
-}   
+}
+printf("\n");
 return(0);
 }

@@ -8,7 +8,8 @@
 int main(void)
 {
 char ch;
-for (ch = 'a' ; ch <= 'o' ; ch++)
+printf("abcd");
+for (ch = 'f' ; ch <= 'p' ; ch++)
 {
 putchar(ch);
 }

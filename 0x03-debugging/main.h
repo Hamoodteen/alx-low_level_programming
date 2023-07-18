@@ -6,7 +6,8 @@
 #include <time.h>
 
 /**
-* function that prints if integer is positive or negative
+* positive_or_negative - function that prints if integer is positive or negative
+* Return nothing
 */
 
 void positive_or_negative(int i)

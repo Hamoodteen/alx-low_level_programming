@@ -1,11 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
 * function that prints if integer is positive or negative
 */
+
 void positive_or_negative(int i)
 {
 if (i > 0)
@@ -21,4 +24,5 @@ else if (i < 0)
 printf("%d is negative\n", i);
 };
 }
+
 #endif /* MAIN_H */

@@ -7,6 +7,5 @@
 int main(void)
 {
 print_alphabet();
-printf("\n");
 return (0);
 }

@@ -6,4 +6,5 @@ for(i = 'a' ; i <= 'z' ; i++)
 {
 printf("%c" , i);
 }
+printf("\n");
 }

@@ -10,7 +10,7 @@ int i;
 int n;
 for (i = 00 ; i <= 23 ; i++)
 {
-for (n = 00 ; i <= 59 ; i++)
+for (n = 00 ; n <= 59 ; n++)
 {
 printf("%d:%d\n", n, i);
 }

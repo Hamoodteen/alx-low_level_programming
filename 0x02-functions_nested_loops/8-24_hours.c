@@ -14,5 +14,6 @@ for (n = 00 ; i <= 59 ; i++)
 {
 printf("%d:%d\n", n, i);
 }
+printf("%d:%d\n", n, i);
 }
 }

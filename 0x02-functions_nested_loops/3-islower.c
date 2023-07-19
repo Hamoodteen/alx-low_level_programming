@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - 0
- * @c - int
+ * @c: int
  * Return: 1 if c is lowercase , 0 oherwise.
  */
 int _islower(int c)

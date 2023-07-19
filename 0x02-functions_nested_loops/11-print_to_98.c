@@ -27,6 +27,6 @@ _putchar(' ');
 }
 else if (n == 98)
 {
-
+_putchar(n);
 }
 }

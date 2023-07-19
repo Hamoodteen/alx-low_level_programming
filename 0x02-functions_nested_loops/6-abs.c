@@ -12,8 +12,8 @@ _putchar(n);
 }
 else if (n < 0)
 {
-int m = ((n * n) / n);
-_putchar(m);
+n = (-1) * n;
+_putchar(n);
 }
 return (n);
 }

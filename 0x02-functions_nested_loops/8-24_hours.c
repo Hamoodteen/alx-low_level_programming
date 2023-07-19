@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * jack_bauer - 0
  * Return: void
@@ -11,10 +12,7 @@ for (i = 00 ; i <= 23 ; i++)
 {
 for (n = 00 ; i <= 59 ; i++)
 {
-_putchar((int)i);
-_putchar(':');
-_putchar((int)n);
-_putchar('\n');
+printf("%d:%d\n", i, n);
 }
 }
 }

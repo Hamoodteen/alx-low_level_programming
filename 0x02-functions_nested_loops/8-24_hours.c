@@ -5,9 +5,11 @@
  */
 void jack_bauer(void)
 {
-for (int i = 00 ; i <= 23 ; i++)
+int i;
+int n;
+for (i = 00 ; i <= 23 ; i++)
 {
-for (int n = 00 ; i <= 59 ; i++)
+for (n = 00 ; i <= 59 ; i++)
 {
 _putchar(i);
 _putchar(':');

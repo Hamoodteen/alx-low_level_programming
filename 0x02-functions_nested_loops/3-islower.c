@@ -5,6 +5,9 @@
  * Return: 1 if c is lowercase , 0 oherwise.
  */
 int _islower(int c)
+/*
+* c int
+*/
 {
 if ((c >= 97 && c <= 122))
 {

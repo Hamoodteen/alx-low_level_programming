@@ -2,7 +2,7 @@
 /**
  * _isalpha - 0
  * @c: int
- * Return: 1 if c is lowercase , 0 oherwise.
+ * Return: 1 if c is letter , upper or lower , 0 oherwise.
  */
 int _isalpha(int c)
 {

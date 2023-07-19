@@ -13,7 +13,8 @@ for (n = 0 ; i <= 9 ; i++)
 {
 _putchar((i * n) + '0');
 _putchar(',');
-_putchar('  ');
+_putchar(' ');
+_putchar(' ');
 }
 _putchar((i * n) + '0');
 _putchar('\n');

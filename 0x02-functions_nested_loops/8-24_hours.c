@@ -12,7 +12,7 @@ for (i = 00 ; i <= 23 ; i++)
 {
 for (n = 00 ; i <= 59 ; i++)
 {
-printf("%d:%d\n", i, n);
+printf("%d:%d\n", n, i);
 }
 }
 }

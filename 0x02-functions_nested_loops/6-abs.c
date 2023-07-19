@@ -12,7 +12,7 @@ _putchar(n);
 }
 else if (n < 0)
 {
-int m = ((n*n)/n);
+int m = ((n * n) / n);
 _putchar(m);
 }
 return (n);

@@ -18,7 +18,6 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
-_putchar((j * n) + '0');
 _putchar('\n');
 }
 }

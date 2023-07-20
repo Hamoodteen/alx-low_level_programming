@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - f
- * return: 0
+ * Return: 0
 */
 int main(void)
 {
@@ -11,7 +11,7 @@ for (i = 0 ; i <= 1024 ; i++)
 {
 if (((i % 3) == 0) || ((i % 5) == 0))
 {
-j += i ;
+j += i;
 }
 }
 printf("%d\n", j);

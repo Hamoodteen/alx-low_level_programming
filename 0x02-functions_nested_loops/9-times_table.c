@@ -18,7 +18,7 @@ if ((j < 10) && (n != 0))
 {
 if (n == 9)
 {
-printf("%d", j);
+printf(" %d", j);
 }
 else
 {

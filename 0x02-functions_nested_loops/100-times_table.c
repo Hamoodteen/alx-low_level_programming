@@ -25,11 +25,11 @@ if ((j < 10) && (m != 0))
 {
 if (m == n)
 {
-printf("  %d", j);
+printf("  %d ", j);
 }
 else
 {
-printf("  %d,", j);
+printf(" %d, ", j);
 }
 }
 else

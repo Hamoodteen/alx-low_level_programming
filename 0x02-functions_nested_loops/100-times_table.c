@@ -12,8 +12,10 @@ int m;
 int j = 0;
 if ((n > 15) || (n < 0))
 {
-return (n);
+printf("");
 }
+else
+{
 for (i = 0; i <= n; i++)
 {
 for (m = 0; m <= n; m++)
@@ -43,5 +45,6 @@ printf("%d, ", j);
 }
 }
 printf("\n");
+}
 }
 }

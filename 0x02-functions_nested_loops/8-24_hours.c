@@ -23,11 +23,17 @@ void jack_bauer(void)
 				{
 					printf("0%d:%d\n", i, n);
 				}
-				printf("%0d:%d\n", i, n);
 			}
 			else
 			{
-				printf("%d:%d\n", i, n);
+				if (n < 10)
+				{
+					printf("%d:0%d\n", i, n);
+				}
+				else
+				{
+					printf("%d:%d\n", i, n);
+				}
 			}
 		}
 	}

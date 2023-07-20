@@ -16,7 +16,7 @@ for (n = 0 ; n <= 9 ; n++)
 j = (i * n);
 if (j < 10)
 {
-if (i = 9)
+if (i == 9)
 {
 printf("%d", j);
 }
@@ -27,7 +27,7 @@ printf("%d,  ", j);
 }
 else
 {
-if (i = 9)
+if (i == 9)
 {
 printf("%d", j);
 }

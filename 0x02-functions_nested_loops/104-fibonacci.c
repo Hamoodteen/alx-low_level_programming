@@ -10,6 +10,6 @@ for (i = 0 ; i <= 3 ; i++)
 {
 
 }
-printf("4613732\n");
+printf("\n");
 return (0);
 }

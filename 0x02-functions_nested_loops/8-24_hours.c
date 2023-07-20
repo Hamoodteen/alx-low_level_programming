@@ -8,6 +8,7 @@ void jack_bauer(void)
 {
 	int i;
 	int n;
+
 	for (i = 00; i <= 23; i++)
 	{
 		for (n = 00; n <= 59; n++)
@@ -22,6 +23,7 @@ void jack_bauer(void)
 				{
 					printf("0%d:%d\n", i, n);
 				}
+				printf("%0d:%d\n", i, n);
 			}
 			else
 			{

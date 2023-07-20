@@ -14,7 +14,14 @@ for (i = 0 ; i <= 9 ; i++)
 for (n = 0 ; n <= 9 ; n++)
 {
 j = (i * n);
+if (j < 10)
+{
 printf("%d,  ", j);
+}
+else
+{
+printf("%d, ", j);
+}
 }
 printf("\n");
 }

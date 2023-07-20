@@ -40,7 +40,7 @@ printf("%d", j);
 }
 else
 {
-printf("%d,  ", j);
+printf("  %d,", j);
 }
 }
 }

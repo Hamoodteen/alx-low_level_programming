@@ -12,7 +12,7 @@ int m;
 int j = 0;
 if ((n > 15) || (n < 0))
 {
-printf("\0");
+return (n);
 }
 else
 {

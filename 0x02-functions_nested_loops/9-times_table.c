@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * times_table - 0
  * Return: void
@@ -13,10 +14,7 @@ for (i = 0 ; i <= 9 ; i++)
 for (n = 0 ; n <= 9 ; n++)
 {
 j = (i * n);
-_putchar(j + '0');
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
+printf("%d, ", j);
 }
 _putchar('\n');
 }

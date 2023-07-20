@@ -36,7 +36,7 @@ else
 {
 if (m == n)
 {
-printf("%d", j);
+printf(" %d", j);
 }
 else
 {

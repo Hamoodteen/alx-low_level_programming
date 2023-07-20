@@ -23,18 +23,18 @@ for (m = 0; m <= n; m++)
 j = (i * m);
 if ((j < 10) && (m != 0))
 {
-if (m == 9)
+if (m == n)
 {
 printf("  %d", j);
 }
 else
 {
-printf(" %d, ", j);
+printf(" %d,  ", j);
 }
 }
 else
 {
-if (m == 9)
+if (m == n)
 {
 printf("%d", j);
 }

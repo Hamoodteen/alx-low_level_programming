@@ -11,7 +11,7 @@ int n;
 int j = 0;
 for (i = 0 ; i <= 9 ; i++)
 {
-for (n = 1 ; n <= 9 ; n++)
+for (n = 0 ; n <= 9 ; n++)
 {
 j = (i * n);
 printf("%d,  ", j);

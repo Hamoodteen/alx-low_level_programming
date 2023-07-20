@@ -18,7 +18,7 @@ if (j < 10)
 {
 if (n == 9)
 {
-printf(" %d", j);
+printf("%d", j);
 }
 else
 {
@@ -29,11 +29,11 @@ else
 {
 if (n == 9)
 {
-printf(" %d", j);
+printf("%d", j);
 }
 else
 {
-printf("%d, ", j);
+printf(" %d,", j);
 }
 }
 }

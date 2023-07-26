@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-  * print_rev - f
+  * rev_string - f
   * @s: char
   * Return: void
 */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 
 }

@@ -8,7 +8,7 @@ int _strlen(char *s)
 {
 unsigned long int i;
 int j = 0;
-for (i = 0 ; i <= sizeof(*s) ; i++)
+for (i = 0 ; i <= (sizeof(s) / sizeof(s[0])) ; i++)
 {
 j = i;
 }

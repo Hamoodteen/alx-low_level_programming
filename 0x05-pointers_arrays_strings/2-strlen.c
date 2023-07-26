@@ -12,7 +12,7 @@ for (i = 0 ; s[i] != '\0' ; i++)
 {
 j = i;
 }
-if (s != NULL)
+if (s == NULL)
 {
 j++;
 }

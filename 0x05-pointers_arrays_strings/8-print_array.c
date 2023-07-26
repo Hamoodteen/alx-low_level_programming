@@ -19,6 +19,6 @@ printf("%d\n", a[n - 1]);
 }
 else
 {
-
+printf("\n");
 }
 }

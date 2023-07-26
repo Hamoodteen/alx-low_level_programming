@@ -25,7 +25,7 @@ else if (j % 2 != 0)
 {
 j = ((j - 1) / 2);
 }
-for (n = j ; str[n] != '\0' ; i++)
+for (n = j ; str[n] != '\0' ; n++)
 {
 _putchar(str[n]);
 }

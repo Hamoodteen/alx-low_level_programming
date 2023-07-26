@@ -2,7 +2,7 @@
 /**
   * _strlen - f
   * @s: char
-  * Return: integer
+  * Return: int
 */
 int _strlen(char *s)
 {

@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  * _strncpy - f
-  * @dest: string
-  * @src: string
-  * @n: int
-  * Return: string
-  */
+* _strncpy - f
+* @dest: string
+* @src: string
+* @n: int
+* Return: string
+*/
 char *_strncpy(char *dest, char *src, int n)
 {
 int a, b;

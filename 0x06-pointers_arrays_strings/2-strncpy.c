@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-  * *_strncpy - f
+  * _strncpy - f
+  * _strncpy - f
   * @dest: char
   * @src: char
   * @n: int

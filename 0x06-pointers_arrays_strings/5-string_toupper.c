@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * string_toupper - Change all lowercase letters to uppercase
- * @a: string
- * Return: a
+ * @c: string
+ * Return: c
  */
-char *string_toupper(char *a)
+char *string_toupper(char *c)
 {
 	int i;
-	for (i = 0; a[i] != "\0"; i++)
+	for (i = 0; c[i] != "\0"; i++)
 	{
-		if ((a[i] > 96) && (a[i] < 123))
+		if ((c[i] > 96) && (c[i] < 123))
 		{
-			a[i] -= 32;
+			c[i] -= 32;
 		}
 	}
-	return (a);
+	return (c);
 }

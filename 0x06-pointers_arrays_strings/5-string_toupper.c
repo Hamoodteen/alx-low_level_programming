@@ -4,15 +4,15 @@
 * @c: string
 * Return: string
 */
-char *string_toupper(char *a)
+char *string_toupper(char *c)
 {
 int i;
-for (i = 0 ; a[i] != "/0" ; i++)
+for (i = 0; c[i] != '\0'; i++)
 {
-if (((int)a[i] > 96) && ((int)a[i] < 123))
+if (c[i] > 96 && c[i] < 123)
 {
-a[i] -= 32;
+c[i] -= 32;
 }
 }
-return (a);
+return (c);
 }

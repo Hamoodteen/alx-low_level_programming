@@ -13,7 +13,7 @@ if ((((int)a[i] > 64) && ((int)a[i] < 78)) || (((int)a[i] > 96) && ((int)a[i] < 
 {
 a[i] += 16;
 }
-else if ((((int)a[i] > 77) && ((int)a[i] < 91)) || (((int)a[i] > 109) && ((int)a[i] < 123)))
+else
 {
 a[i] -= 16;
 }

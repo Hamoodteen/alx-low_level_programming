@@ -9,7 +9,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int a, b;
-if (sizeof(src) < n)
+if (src < n)
 {
 for (a = 0; dest[a] != '\0'; a++)
 {

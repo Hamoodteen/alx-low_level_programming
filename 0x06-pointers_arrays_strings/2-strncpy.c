@@ -6,18 +6,13 @@
  * @n: int
  * Return: string
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src)
 {
-int a, b;
-if (sizeof(src) < n)
+int i;
+for (i = 0; src[i] != '\0'; i++)
 {
-for (a = 0; dest[a] != '\0'; a++)
-{
-for (b = 0; ((b < n) && (src[b] != '\0')); b++)
-{
-dest[a + b] = src[b];
+dest[i] = src[i];
 }
-}
-}
+dest[i] = '\0';
 return (dest);
 }

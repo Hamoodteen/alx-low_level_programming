@@ -4,6 +4,7 @@
 * @a: string
 * Return: string
 */
+
 char *string_toupper(char *a)
 {
 int i;

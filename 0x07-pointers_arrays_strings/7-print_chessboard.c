@@ -1,12 +1,19 @@
 #include "main.h"
 /**
  * print_chessboard - f
- * @s: char
- * @accept: char
- * Return: s
+ * @a: char
+ * Return: void
  */
 void print_chessboard(char (*a)[8])
 {
-s[5] = 'h';
-return (accept);
+int i;
+int j;
+for (i = 0 ; i < 8 ; i++)
+{
+for (j = 0 ; j < (sizeof(a) / sizeof(char)) ; j++)
+{
+_putchar(a[i][j]);
+}
+_putchar('\n');
+}
 }

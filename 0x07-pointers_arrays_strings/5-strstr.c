@@ -8,6 +8,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 char s[3] = "hi!";
+needle[5] = 'q';
 haystack[5] = 'h';
 return (s);
 }

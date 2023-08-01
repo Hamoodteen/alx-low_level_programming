@@ -7,6 +7,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-accept = NULL;
+accept = '.';
 return (s);
 }

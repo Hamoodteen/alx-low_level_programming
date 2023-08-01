@@ -7,7 +7,6 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-int i = 0;
-s[5] = accept[2];
-return (s);
+s[5] = 'h';
+return (accept);
 }

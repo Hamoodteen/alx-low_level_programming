@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - f
+ * _strstr - f
  * @haystack: char
  * @needle: char
  * Return: s

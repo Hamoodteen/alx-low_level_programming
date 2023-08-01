@@ -12,12 +12,12 @@ int i;
 int j = 0;
 int l;
 int b = 0;
-for (i = 0 ; i <= (size - 1) ; i++)
+for (i = 0 ; i <= size ; i++)
 {
 j += a[i];
 }
 printf("%d, ", j);
-for (l = size ; l >= 1 ; l--)
+for (l = size ; l >= 0 ; l--)
 {
 b += a[l];
 }

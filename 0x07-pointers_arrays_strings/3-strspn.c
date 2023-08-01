@@ -3,10 +3,11 @@
  * _strspn - f
  * @s: char
  * @accept: char
- * Return: s
+ * Return: c
  */
 unsigned int _strspn(char *s, char *accept)
 {
+int c = 0;
 accept = '.';
-return (s);
+return (c);
 }

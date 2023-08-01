@@ -14,12 +14,12 @@ int l;
 int b = 0;
 for (i = 0 ; i <= (size - 1) ; i++)
 {
-j += a[i][i];
+j += a[i];
 }
 printf("%d, ", j);
 for (l = size ; l >= 1 ; l--)
 {
-b += a[l][l];
+b += a[l];
 }
 printf("%d\n", b);
 }

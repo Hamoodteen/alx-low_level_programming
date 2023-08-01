@@ -8,6 +8,8 @@
 unsigned int _strspn(char *s, char *accept)
 {
 int c = 0;
-accept[c] = s[c];
+int i = 7;
+char q[] = "qwerty";
+accept[c] = q[i];
 return (c);
 }

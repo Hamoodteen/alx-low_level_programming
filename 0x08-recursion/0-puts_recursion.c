@@ -11,7 +11,7 @@ if (s[i] != '\0')
 {
 _putchar(s[i]);
 i++;
-_puts_recursion(**s);
+_puts_recursion(char *s);
 }
 _putchar('\n');
 }

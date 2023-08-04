@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * is_palindrome - f
- * @n: int
+ * @s: char
  * Return: int
 */
 int is_palindrome(char *s)

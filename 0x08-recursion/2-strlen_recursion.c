@@ -2,14 +2,15 @@
 /**
  * _strlen_recursion - f
  * @s: char
- * Return: i
+ * Return: j
 */
 int _strlen_recursion(char *s)
 {
 int i = 0;
-if (*s != '\0')
+int j = 0;
+if (s[i] != '\0')
 {
-i = _strlen_recursion(s + 1);
+j = _strlen_recursion(s[i + 1]);
 }
-return (i);
+return (j);
 }

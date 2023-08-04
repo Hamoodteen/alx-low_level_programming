@@ -13,6 +13,6 @@ return (0);
 }
 if ((n % i) != ((n / 2) + 1))
 {
-is_prime_number(n + 1);
+return (is_prime_number(n + 1));
 }
 }

@@ -3,7 +3,7 @@
  * _pow_recursion - f
  * @x: int
  * @y: int
- * Return: i
+ * Return: int
 */
 int _pow_recursion(int x, int y)
 {

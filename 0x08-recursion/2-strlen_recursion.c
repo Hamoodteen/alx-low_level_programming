@@ -2,12 +2,14 @@
 /**
  * _strlen_recursion - f
  * @s: char
- * Return: int
+ * Return: i
 */
 int _strlen_recursion(char *s)
 {
+int i = 0;
 if (*s != '\0')
 {
-return (sizeof(_strlen_recursion(s + 1)));
+i = (sizeof(_strlen_recursion(s + 1)));
 }
+return (i);
 }

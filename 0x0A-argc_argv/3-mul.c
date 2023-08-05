@@ -8,9 +8,8 @@
 */
 int main(int argc, char **argv)
 {
-(void)argc;
 int i = 1;
-if (argc == 2)
+if (argc == 3)
 {
 i = (atoi(argv[1]) * atoi(argv[2]));
 printf("%d\n", i);

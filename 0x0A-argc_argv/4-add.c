@@ -21,16 +21,15 @@ z += atoi(argv[i]);
 }
 printf("%d\n", z);
 }
-return (0);
 }
 else if (argc == 1)
 {
 printf("%d\n", i);
-return (0);
 }
 else
 {
 printf("Error\n");
 return (1);
 }
+return (0);
 }

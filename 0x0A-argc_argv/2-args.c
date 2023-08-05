@@ -7,6 +7,7 @@
 */
 int main(int argc, char **argv)
 {
+(void)argv;
 int i;
 for (i = 1 ; i <= argc ; i++)
 {

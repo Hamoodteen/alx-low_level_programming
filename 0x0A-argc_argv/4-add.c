@@ -22,7 +22,7 @@ return (0);
 else if (argc == 1)
 {
 printf("%d\n", i);
-reeturn (0);
+return (0);
 }
 else
 {

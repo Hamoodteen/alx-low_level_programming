@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - prints minimum number coins to make change for an amount of money.
  * @argc: number of arguments
  * @argv: array with the arguments
- *
  * Return: always 0
  **/
-
 int main(int argc, char *argv[])
 {
 int dev = 0, coins = 0;
@@ -23,7 +20,8 @@ while (dev >= 25)
 {
 dev -= 25;
 coins++;
-}while (dev >= 10)
+}
+while (dev >= 10)
 {
 dev -= 10;
 coins++;

@@ -24,7 +24,7 @@ printf("%d\n", z);
 }
 else if (argc == 1)
 {
-printf("%d\n", i);
+printf("%d\n", z);
 }
 else
 {

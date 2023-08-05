@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - f
  * @argc: int
@@ -10,7 +11,7 @@ int main(int argc, char **argv)
 {
 int i;
 int z = 0;
-if ((argc % 1 == 0) && (argc != 1))
+if ((isdigit(argv) != 0) && (argc != 1))
 {
 for (i = 1 ; i < argc ; i++)
 {

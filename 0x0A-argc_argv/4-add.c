@@ -15,7 +15,7 @@ if (argc != 1)
 {
 for (i = 1 ; i < argc ; i++)
 {
-if (isdigit(argv) != 0)
+if (isdigit(argv[i]) != 0)
 {
 z += atoi(argv[i]);
 }

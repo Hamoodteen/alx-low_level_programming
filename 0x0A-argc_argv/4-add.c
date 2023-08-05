@@ -10,6 +10,7 @@
 int main(int argc, char **argv)
 {
 int i;
+int s = 0;
 int z = 0;
 if (argc != 1)
 {
@@ -17,7 +18,8 @@ for (i = 1 ; i < argc ; i++)
 {
 if (isdigit(argv[i]) != 0)
 {
-z += atoi(argv[i]);
+s = atoi(argv[i]);
+z += s;
 }
 printf("%d\n", z);
 }

@@ -24,7 +24,7 @@ int j;
 		free(a);
 		return (NULL);
 	}
-	for (i = 0 ; i <= height ; i++)
+	for (i = 0 ; i <= width ; i++)
 	{
 		a[i] = (int *)malloc(i * sizeof(width));
 		for (j = 0 ; j <= width ; j++)

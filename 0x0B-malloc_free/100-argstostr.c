@@ -3,18 +3,18 @@
  * argstostr - f
  * @ac: int
  * @av: char
- * Return: s
+ * Return: c
  */
 char *argstostr(int ac, char **av)
 {
-	char *s;
+	char *c;
 	int i, j, k;
 		if ((ac == 0) || (av == NULL))
 		{
 			return (NULL);
 		}
-		s = (char *)malloc(4156);
-		if (s == NULL)
+		c = (char *)malloc(4156);
+		if (c == NULL)
 		{
 			return (NULL);
 		}
@@ -22,10 +22,10 @@ char *argstostr(int ac, char **av)
 		{
 			for (j = 0 ; av[i][j] != '\0' ; j++)
 			{
-				s[k++] = av[i][j];
+				c[k++] = av[i][j];
 			}
-			s[k++] = '\n';
+			c[k++] = '\n';
 		}
-		s[k] = '\0';
-		return (s);
+		c[k] = '\0';
+		return (c);
 }

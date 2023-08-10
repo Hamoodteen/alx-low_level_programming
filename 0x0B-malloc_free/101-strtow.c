@@ -11,7 +11,7 @@ int i;
 int j = 0;
 int k = 0;
 char **c;
-	if ((str == NULL) || (strcmp(str, "", 1)) || (strcmp(str, " ", 1)))
+	if ((str == NULL) || (strcmp(str, "") == 0) || (strcmp(str, " ") == 0))
 	{
 		return (NULL);
 	}

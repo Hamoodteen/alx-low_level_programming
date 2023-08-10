@@ -10,12 +10,22 @@ char *argstostr(int ac, char **av)
 	char *c;
 	int i;
 	int j;
+	int cn = 0;
 	int k = 0;
 		if ((ac == 0) || (av == NULL))
 		{
 			return (NULL);
 		}
-		c = (char *)malloc(4156 * sizeof(char));
+		for (i = 0; i < ac; b++)
+		{
+			for (j = 0; av[i][j] != '\0'; c++)
+			{
+				a++;
+			}
+			a++;
+		}
+		a++;
+		c = (char *)malloc(a);
 		if (c == NULL)
 		{
 			return (NULL);

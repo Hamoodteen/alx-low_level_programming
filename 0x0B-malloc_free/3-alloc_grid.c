@@ -17,6 +17,8 @@ int j;
 	a = (int **)malloc(height * sizeof(*a));
 	if (a == NULL)
 	{
+		free(**a);
+		free(*a);
 		free(a);
 		return (NULL);
 	}

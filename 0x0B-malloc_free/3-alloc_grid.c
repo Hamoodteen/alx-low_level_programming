@@ -27,6 +27,7 @@ int j;
 		{
 			free(a[i]);
 			free(a);
+			return (NULL);
 		}
 		for (j = 0 ; j <= width ; j++)
 		{

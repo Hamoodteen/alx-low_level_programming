@@ -27,7 +27,7 @@ int j;
 	}
 	for (i = 0 ; i <= height ; i++)
 	{
-		a[i] = (int *)malloc(w * sizeof(width));
+		a[i] = (int *)malloc(i * sizeof(width));
 		for (j = 0 ; j <= width ; j++)
 		{
 			a[i][j] = 0;

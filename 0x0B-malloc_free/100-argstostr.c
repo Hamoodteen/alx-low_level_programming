@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 		{
 			return (NULL);
 		}
-		s = (char *)malloc((ac * sizeof(**av)) + ac);
+		s = (char *)malloc(4156);
 		if (s == NULL)
 		{
 			return (NULL);

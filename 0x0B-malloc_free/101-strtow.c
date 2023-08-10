@@ -10,7 +10,7 @@ int i;
 int j = 0;
 int k = 0;
 char **c;
-	if ((str == NULL) || (str[0] == ''))
+	if ((str == NULL) || (str[0] == ""))
 	{
 		return (NULL);
 	}

@@ -17,12 +17,17 @@ int j;
 	a = malloc(height * sizeof(*a));
 	if (a == NULL)
 	{
-		free(*a);
+		free(a);
 		return (NULL);
 	}
 	for (i = 0 ; i <= height ; i++)
 	{
 		a[i] = malloc(width * sizeof(**a));
+		if (a[i] = NULL)
+		{
+			free(a[i]);
+			free(a);
+		}
 		for (j = 0 ; j <= width ; j++)
 		{
 			a[i][j] = 0;

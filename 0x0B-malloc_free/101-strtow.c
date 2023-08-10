@@ -9,8 +9,8 @@ char **strtow(char *str)
 int i;
 int j = 0;
 int k = 0;
-char c[][];
-	if ((str == NULL) || (str == void))
+char **c;
+	if ((str == NULL) || (str == ''))
 	{
 		return (NULL);
 	}

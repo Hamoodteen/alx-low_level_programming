@@ -16,10 +16,7 @@ int j;
 	{
 		return (NULL);
 	}
-	for (h = 0 ; h <= height ; h++)
-	{
-	}
-	a = (int **)malloc(h * sizeof(height));
+	a = (int **)malloc(height * sizeof(*a));
 	if (a == NULL)
 	{
 		free(a);
@@ -27,10 +24,7 @@ int j;
 	}
 	for (i = 0 ; i <= height ; i++)
 	{
-		for (w = 0 ; w <= width ; i++)
-		{
-		}
-		a[i] = (int *)malloc(w * sizeof(width));
+		a[i] = (int *)malloc(width * sizeof(**a));
 		for (j = 0 ; j <= width ; j++)
 		{
 			a[i][j] = 0;

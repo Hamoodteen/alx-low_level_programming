@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * strtow - f
  * @str: char
@@ -10,7 +11,7 @@ int i;
 int j = 0;
 int k = 0;
 char **c;
-	if (str == NULL)
+	if ((str == NULL) && (strcmp(str, "") == 0))
 	{
 		return (NULL);
 	}

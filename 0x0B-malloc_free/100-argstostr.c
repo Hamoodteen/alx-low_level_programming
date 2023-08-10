@@ -8,9 +8,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	unsigned long int i;
-	int a;
-	int b;
+	int i;
 		if ((ac == 0) || (av == NULL))
 		{
 			return (NULL);

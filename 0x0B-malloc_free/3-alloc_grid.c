@@ -23,7 +23,7 @@ int j;
 	for (i = 0 ; i <= height ; i++)
 	{
 		a[i] = malloc(width * sizeof(**a));
-		if (a[i] = NULL)
+		if (a[i] == NULL)
 		{
 			free(a[i]);
 			free(a);

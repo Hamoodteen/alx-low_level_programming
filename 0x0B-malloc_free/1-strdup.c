@@ -7,7 +7,7 @@
 char *_strdup(char *str)
 {
 	char *s;
-	long unsigned int i;
+	int i;
 		if (str == NULL)
 		{
 			return (NULL);
@@ -17,7 +17,7 @@ char *_strdup(char *str)
 		{
 			return (NULL);
 		}
-		for (i = 0; i <= sizeof(str); i++)
+		for (i = 0; str[i] != '\0'; i++)
 		{
 			s[i] = str[i];
 		}

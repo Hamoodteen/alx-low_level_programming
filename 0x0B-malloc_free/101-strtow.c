@@ -9,13 +9,15 @@ char **strtow(char *str)
 int i;
 int j = 0;
 int k = 0;
-char **c = 0;
+char **c;
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	c = malloc(*str * sizeof(*c));
 	for (i = 0 ; str[i] != '\0' ; i++)
 	{
+		c[i] = malloc(str * sizeof(**c));
 		if ((str[i] == ' ') || (str[i] == '\0'))
 		{
 			c[k][j] = '\0';

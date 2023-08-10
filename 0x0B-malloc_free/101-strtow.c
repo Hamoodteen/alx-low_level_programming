@@ -14,19 +14,19 @@ char **c = 0;
 	{
 		return (NULL);
 	}
-	for(i = 0 ; str[i] != '\0' ; i++)
-    {
-        if((str[i] == ' ') || (str[i] == '\0'))
-        {
-            c[k][j] = '\0';
-            k++;
-            j = 0;
-        }
-        else
-        {
-            c[k][j] = str[i];
-            j++;
-        }
-    }
+	for (i = 0 ; str[i] != '\0' ; i++)
+	{
+		if ((str[i] == ' ') || (str[i] == '\0'))
+		{
+			c[k][j] = '\0';
+			k++;
+			j = 0;
+		}
+		else
+		{
+			c[k][j] = str[i];
+			j++;
+		}
+	}
 	return (c);
 }

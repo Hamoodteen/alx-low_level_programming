@@ -17,7 +17,7 @@ int j;
 	a = malloc(height * sizeof(*a));
 	if (a == NULL)
 	{
-		free(a);
+		free(*a);
 		return (NULL);
 	}
 	for (i = 0 ; i <= height ; i++)

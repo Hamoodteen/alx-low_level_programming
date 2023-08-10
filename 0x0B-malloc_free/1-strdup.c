@@ -20,10 +20,10 @@ char *_strdup(char *str)
 		{
 			return (NULL);
 		}
-		}
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			s[i] = str[i];
+		}
 		}
 		return (s);
 }

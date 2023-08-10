@@ -17,7 +17,7 @@ char **c;
 	c = malloc(*str * sizeof(*c));
 	for (i = 0 ; str[i] != '\0' ; i++)
 	{
-		c[i] = malloc(str * sizeof(**c));
+		c[i] = malloc(sizeof(**c));
 		if ((str[i] == ' ') || (str[i] == '\0'))
 		{
 			c[k][j] = '\0';

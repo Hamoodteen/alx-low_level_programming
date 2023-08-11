@@ -9,9 +9,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *p;
 	unsigned int a = (nmemb * size);
+		if ((nmemb == 0) || (size == 0))
+		{
+			return (NULL);
+		}
 		p = malloc(a);
 		memset(p, 0, a);
-		if ((nmemb == 0) || (size == 0) || (p == NULL))
+		if (p == NULL)
 		{
 			return (NULL);
 		}

@@ -26,6 +26,6 @@ int main(int argc, char **argv)
 		num1 = (long long int)*argv[1];
 		num2 = (long long int)*argv[2];
 		x = (num1 * num2);
-		printf("%d\n", x);
+		printf("%lld\n", x);
 		return (0);
 }

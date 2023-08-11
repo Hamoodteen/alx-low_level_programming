@@ -12,9 +12,7 @@ int main(int argc, char **argv)
 {
 	long int num1 = 0;
 	long int num2 = 0;
-	long int *x = 0;
 	long int d = 0;
-		free(x);
 		if (argc != 3)
 		{
 			printf("Error\n");
@@ -28,8 +26,6 @@ int main(int argc, char **argv)
 		num1 = (long int)*argv[1];
 		num2 = (long int)*argv[2];
 		d = (num1 * num2);
-		x = malloc(d * sizeof(long int));
-		x = &d;
-		printf("%ld\n", *x);
+		printf("%ld\n", d);
 		return (0);
 }

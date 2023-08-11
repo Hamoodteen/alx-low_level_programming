@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * malloc_checked - f
- * @b: int
+ * @b: unsigned int
  * Return: pointer
 */
 void *malloc_checked(unsigned int b)
@@ -12,5 +12,5 @@ void *malloc_checked(unsigned int b)
 		{
 			exit(98);
 		}
-	return (*p);
+	return (p);
 }

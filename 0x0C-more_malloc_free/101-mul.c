@@ -10,8 +10,8 @@
 */
 int main(int argc, char **argv)
 {
-	long int num1;
-	long int num2;
+	long int num1 = 0;
+	long int num2 = 0;
 	long int *x = 0;
 	long int d = 0;
 		free(x);
@@ -27,9 +27,9 @@ int main(int argc, char **argv)
 		}
 		num1 = (long int)*argv[1];
 		num2 = (long int)*argv[2];
-		d = (num1 * num2)
+		d = (num1 * num2);
 		x = malloc(d * sizeof(long int));
 		x = &d;
-		printf("%ld\n", d);
+		printf("%ld\n", *x);
 		return (0);
 }

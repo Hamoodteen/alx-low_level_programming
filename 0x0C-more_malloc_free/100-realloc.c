@@ -34,12 +34,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		{
 			base = old_size;
 		}
+		new_ptr = malloc(new_size);
 		if (new_ptr == NULL)
 		{
 			return (NULL);
 		}
-		free(new_ptr);
-		new_ptr = malloc(base);
 		new_ptr = memcpy(new_ptr, ptr, base);
+		free(ptr);
 		return (new_ptr);
 }

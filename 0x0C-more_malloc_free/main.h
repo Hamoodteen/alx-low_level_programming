@@ -2,6 +2,7 @@
 #define main_h
 
 #include <unistd.h>
+#include <string.h>
 #include <stdlib.h>
 #include <limits.h>
 int _putchar(char c);

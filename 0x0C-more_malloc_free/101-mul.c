@@ -10,9 +10,9 @@
 */
 int main(int argc, char **argv)
 {
-	int num1;
-	int num2;
-	int x;
+	long long int num1;
+	long long int num2;
+	long long int x;
 		if (argc != 3)
 		{
 			printf("Error\n");
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 			printf("Error\n");
 			exit(98);
 		}
-		num1 = (int)*argv[1];
-		num2 = (int)*argv[2];
+		num1 = (long long int)*argv[1];
+		num2 = (long long int)*argv[2];
 		x = (num1 * num2);
 		printf("%d\n", x);
 		return (0);

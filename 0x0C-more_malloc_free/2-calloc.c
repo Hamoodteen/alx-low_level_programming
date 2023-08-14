@@ -14,10 +14,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 			return (NULL);
 		}
 		p = malloc(a);
-		memset(p, 0, a);
 		if (p == NULL)
 		{
 			return (NULL);
 		}
+		memset(p, 0, a);
 	return (p);
 }

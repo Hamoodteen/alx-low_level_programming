@@ -8,7 +8,6 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		prinf();
 	}
 	if (d->name == NULL)
 	{

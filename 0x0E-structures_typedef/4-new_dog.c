@@ -15,7 +15,7 @@ dog_t *dog;
 		free(dog);
 		return (NULL);
 	}
-	/* dog->name = malloc(sizeof(name));
+	dog->name = malloc(sizeof(name));
 	if (dog->name == NULL)
 	{
 		free(dog->name);
@@ -28,7 +28,7 @@ dog_t *dog;
 		free(dog->owner);
 		free(dog);
 		return (NULL);
-	} */
+	}
 	dog->name = name;
 	dog->age = age;
 	dog->owner = owner;

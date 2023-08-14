@@ -25,7 +25,7 @@ int o;
 		return (NULL);
 	}
 	dog->owner = malloc(sizeof(owner));
-	if (o == NULL)
+	if (dog->owner == NULL)
 	{
 		free(dog->owner);
 		free(dog);

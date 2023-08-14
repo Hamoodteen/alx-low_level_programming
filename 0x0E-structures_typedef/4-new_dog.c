@@ -17,14 +17,14 @@ int o;
 		free(dog);
 		return (NULL);
 	}
-	dog->name = malloc(sizeof(name));
+	dog->name = malloc(sizeof(dog->name));
 	if (dog->name == NULL)
 	{
 		free(dog->name);
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(owner));
+	dog->owner = malloc(sizeof(dog->owner));
 	if (dog->owner == NULL)
 	{
 		free(dog->owner);

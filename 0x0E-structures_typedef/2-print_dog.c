@@ -4,12 +4,21 @@
  * @d: struct
  * Return: void
 */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void print_dog(struct dog *d)
 {
-	if (d != NULL)
+	if (d == NULL)
 	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
+		prinf();
 	}
+	if (d->name == NULL)
+	{
+		d->name = "(nil)";
+	}
+	if (d->owner == NULL)
+	{
+		d->owner = "(nil)";
+	}
+	printf("Name: %s\n", d->name);
+	printf("Age: %f\n", d->age);
+	printf("Owner: %s\n", d->owner);
 }

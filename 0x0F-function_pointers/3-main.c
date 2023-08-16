@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	int num1 = 0;
 	int num2 = 0;
 	char *operator;
-		if (argc > 4)
+		if (argc != 4)
 		{
 			printf("Error\n");
 			exit(98);

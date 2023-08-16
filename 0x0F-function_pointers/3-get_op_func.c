@@ -1,6 +1,4 @@
 #include "3-op_functions.c"
-#include <stdlib.h>
-#include <string.h>
 /**
  * get_op_func - f
  * @a: int
@@ -18,7 +16,7 @@ int (*get_op_func(char *s))(int a, int b)
         {NULL, NULL}
     };
     int i;
-        while (i < 6)
+        while (i < 5)
         {
             if (strcmp(s, ops[i].op) == 0)
             {
@@ -26,4 +24,5 @@ int (*get_op_func(char *s))(int a, int b)
             }
             i++;
         }
+        return (NULL);
 }

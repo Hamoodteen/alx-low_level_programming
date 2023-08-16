@@ -1,5 +1,4 @@
 #include "3-get_op_func.c"
-#include <stdio.h>
 /**
  * main - f
  * @argc: int

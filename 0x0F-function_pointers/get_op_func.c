@@ -16,4 +16,12 @@ int (*get_op_func(char *s))(int a, int b)
         {NULL, NULL}
     };
     int i;
+    while (i < 6)
+    {
+        if (s == ops[i].op)
+        {
+            return ops[i].f;
+        }
+        i++;
+    }
 }

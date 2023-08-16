@@ -17,13 +17,13 @@ int main(int argc, char **argv)
 		}
 		num1 = atoi(argv[1]);
 		operator = argv[2];
-		if ((strcmp(operator, "+") != 0) && (strcmp(operator, "-") != 0) && (strcmp(operator, "*") != 0) && (strcmp(operator, "/") != 0) && (strcmp(operator, "%") != 0))
+		if ((operator != "+") && (operator != "-") && (operator != "*") && (operator != "/") && (operator != "%"))
 		{
 			printf("Error\n");
 			exit(99);
 		}
 		num2 = atoi(argv[3]);
-		if (((strcmp(operator, "/") == 0) || (strcmp(operator, "%") == 0)) && (num2 == 0))
+		if (((operator == "/") || (operator == "%")) && (num2 == 0))
 		{
 			printf("Error\n");
 			exit(100);

@@ -1,4 +1,4 @@
-#include "3-op_functions.c"
+#include "3-calc.h"
 #include <stdlib.h>
 #include <string.h>
 /**

@@ -1,4 +1,6 @@
 #include "3-op_functions.c"
+#include <stdlib.h>
+#include <string.h>
 /**
  * get_op_func - f
  * @a: int

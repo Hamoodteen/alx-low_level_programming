@@ -3,11 +3,10 @@
 #include <string.h>
 /**
  * get_op_func - f
- * @a: int
- * @b: int
+ * @s: char
  * Return: int
 */
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
     op_t ops[] = {
         {"+", op_add},

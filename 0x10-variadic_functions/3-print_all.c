@@ -10,6 +10,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	unsigned int i = 0;
 
+	va_start(args, format);
 	while (format[i + 1] != '\0')
 	{
 		switch (format[i])
@@ -58,5 +59,6 @@ void print_all(const char * const format, ...)
 	default:
 		break;
 	}
+	va_end(args);
 	printf("\n");
 }

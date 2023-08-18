@@ -16,15 +16,21 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			printf("%c, ", va_arg(args, int));
+			break;
 		case 'i':
 			printf("%d, ", va_arg(args, int));
+			break;
 		case 'f':
 			printf("%f, ", va_arg(args, double));
+			break;
 		case 's':
 			if (va_arg(args, char *) == NULL)
+			{
 				printf("(nil), ");
 				continue;
+			}
 			printf("%s, ", va_arg(args, char *));
+			break;
 		default:
 			continue;
 		}
@@ -34,15 +40,21 @@ void print_all(const char * const format, ...)
 	{
 	case 'c':
 		printf("%c", va_arg(args, int));
+		break;
 	case 'i':
 		printf("%d", va_arg(args, int));
+		break;
 	case 'f':
 		printf("%f", va_arg(args, double));
+		break;
 	case 's':
 		if (va_arg(args, char *) == NULL)
+		{
 			printf("(nil)");
 			break;
+		}
 		printf("%s", va_arg(args, char *));
+		break;
 	default:
 		break;
 	}

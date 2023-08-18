@@ -7,7 +7,7 @@
  * @...: args
  * Return: void
 */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i = 0;
@@ -17,14 +17,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (separator == NULL)
 		{
-			printf("%d", va_arg(args, int));
+			printf("%s", va_arg(args, char *));
 		}
 		else
 		{
-			printf("%d%s", va_arg(args, int), separator);
+			printf("%s%s", va_arg(args, char *), separator);
 		}
 	}
-	printf("%d", va_arg(args, int));
+	printf("%s", va_arg(args, char *));
 	va_end(args);
 	printf("\n");
 }

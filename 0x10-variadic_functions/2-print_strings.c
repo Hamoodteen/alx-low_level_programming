@@ -6,46 +6,37 @@
  * @n: int
  * @...: args
  * Return: void
-*/
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i = 0;
 
-	va_start(args, n);
-	for (i = 0 ; i < (n - 1) ; i++)
+	if (n > 0)
 	{
-		if (separator == NULL)
+		va_start(args, n);
+		for (i = 0; i < (n - 1); i++)
 		{
-			if (va_arg(args, char *) == NULL)
+			if (separator == NULL)
 			{
-				printf("(nil)");
+				if (va_arg(args, char *) == NULL)
+					printf("(nil)");
+				else
+					printf("%s", va_arg(args, char *));
 			}
 			else
 			{
-				printf("%s", va_arg(args, char *));
+				if (va_arg(args, char *) == NULL)
+					printf("(nil)%s", separator);
+				else
+					printf("%s%s", va_arg(args, char *), separator);
 			}
 		}
+		if (va_arg(args, char *) == NULL)
+			printf("(nil)");
 		else
-		{
-			if (va_arg(args, char *) == NULL)
-			{
-				printf("(nil)%s", separator);
-			}
-			else
-			{
-				printf("%s%s", va_arg(args, char *), separator);
-			}
-		}
+			printf("%s", va_arg(args, char *));
+		va_end(args);
 	}
-	if (va_arg(args, char *) == NULL)
-	{
-		printf("(nil)");
-	}
-	else
-	{
-		printf("%s", va_arg(args, char *));
-	}
-	va_end(args);
 	printf("\n");
 }

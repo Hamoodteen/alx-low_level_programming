@@ -14,7 +14,6 @@ size_t print_list(const list_t *h)
 	else
 		printf("%s\n", h->str);
 	printf("%ui\n", h->len);
-	printf("%list_t\n", h->next);
 	while (h != NULL)
 	{
 		cnt++;

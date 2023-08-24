@@ -16,16 +16,17 @@ list_t *add_node(list_t **head, const char *str)
 	if (str == NULL || head == NULL)
 		return (NULL);
 	l = strlen(str);
-	copy = malloc((l + 1) * sizeof(char));
+	copy = malloc(l * sizeof(char));
 	if (copy == NULL)
 	{
+		free(copy);
 		return (NULL);
 	}
 	copy = strdup(str);
 	nn = malloc(sizeof(list_t));
 	if (nn == NULL)
 	{
-		free(copy);
+		free(nn);
 		return (NULL);
 	}
 	nn->str = copy;

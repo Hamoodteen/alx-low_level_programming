@@ -6,18 +6,31 @@
 */
 void print_binary(unsigned long int n)
 {
-	unsigned long int bin = 0;
-	unsigned long int f = 1;
-	unsigned long int rem;
-	char *c;
+	unsigned long int num;
+	unsigned long int count;
 
-	while (n != 0)
+	num = count = 0;
+	if (n == 0)
+		_putchar('0');
+	while (n > 0)
 	{
-		rem = ~(n & 2);
-		bin += (rem * f);
-		f *= 10;
-		n = n >> 2;
+		num = num << 1;
+		num += n & 1;
+		count++;
+		n = n >> 1;
 	}
-	c = (char *)bin;
-	puts(c);
+	while (num > 0)
+	{
+		_putchar((num & 1) + '0');
+		num = num >> 1;
+		count--;
+	}
+	if (count > 0)
+	{
+		while (count != 0)
+		{
+			_putchar('0');
+			count--;
+		}
+	}
 }

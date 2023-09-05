@@ -44,7 +44,7 @@ unsigned int revbinary(unsigned int n)
 */
 unsigned long int nobd(int bind)
 {
-	int numd = 0;
+	unsigned long numd = 0;
 
 	while (bind != 0)
 	{

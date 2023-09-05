@@ -42,7 +42,7 @@ unsigned int revbinary(unsigned int n)
  * @bind: int
  * Return: numd
 */
-unsigned int nobd(int bind)
+unsigned long int nobd(int bind)
 {
 	int numd = 0;
 

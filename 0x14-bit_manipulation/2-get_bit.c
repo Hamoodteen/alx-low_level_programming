@@ -38,6 +38,22 @@ unsigned int revbinary(unsigned int n)
 	return (rev);
 }
 /**
+ * nobd - f
+ * @bind: int
+ * Return: numd
+*/
+unsigned int nobd(int bind)
+{
+	int numd = 0;
+
+	while (bind != 0)
+	{
+		bind /= 2;
+		numd++;
+	}
+	return (numd);
+}
+/**
  * get_bit - f
  * @n: int
  * @index: int
@@ -49,6 +65,8 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	if (index > 63)
 		return (-1);
+	if (nobd(binary(n)) < index)
+		return (0);
 	rev = revbinary(binary(n));
 	rev >>= index;
 	rev &= binary(1);

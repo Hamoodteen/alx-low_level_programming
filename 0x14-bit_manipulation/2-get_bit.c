@@ -52,7 +52,14 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		rev >>= index;
 		rev &= 1;
-		return (rev);
+		if (rev == 1)
+		{
+			return (rev);
+		}
+		else
+		{
+			return (rev - 1);
+		}
 	}
 	else
 	{

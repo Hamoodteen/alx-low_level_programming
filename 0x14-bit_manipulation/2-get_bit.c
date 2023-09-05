@@ -47,19 +47,10 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	long int rev;
 
-	rev = revbinary(binary(n));
-	if (rev)
-	{
-		rev >>= index;
-		if (rev == 0)
-		{
-			return (0);
-		}
-		rev &= binary(1);
-		return (rev);
-	}
-	else
-	{
+	if (index > 63)
 		return (-1);
-	}
+	rev = revbinary(binary(n));
+	rev >>= index;
+	rev &= binary(1);
+	return (rev);
 }

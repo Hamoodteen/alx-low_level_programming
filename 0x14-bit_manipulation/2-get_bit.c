@@ -51,15 +51,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (rev)
 	{
 		rev >>= index;
-		rev &= 1;
-		if (rev == 1)
-		{
-			return (rev);
-		}
-		else
-		{
-			return (rev - 1);
-		}
+		rev &= binary(1);
 	}
 	else
 	{

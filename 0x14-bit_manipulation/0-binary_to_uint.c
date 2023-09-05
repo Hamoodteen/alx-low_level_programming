@@ -17,10 +17,10 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (check = 0 ; check < strlen(b) ; check++)
 	{
-	if ((b[check] != '0') && (b[check] != '1'))
-	{
-		return (0);
-	}
+		if ((b[check] != '0') && (b[check] != '1'))
+		{
+			return (0);
+		}
 	}
 	for (i = strlen(b) - 1 ; i >= 0 ; i--)
 	{

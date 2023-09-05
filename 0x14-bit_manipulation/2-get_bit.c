@@ -67,7 +67,8 @@ int get_bit(unsigned long int n, unsigned int index)
 		return (-1);
 	if (nobd(n) < index)
 		return (0);
-	if ((n == ULONG_MAX) && (n == ULLONG_MAX))
+	if (((n == ULONG_MAX) && (nobd(n) < index)) ||
+	((n == USHRT_MAX) && (nobd(n) < index)))
 		return (0);
 	rev = revbinary(binary(n));
 	rev >>= index;

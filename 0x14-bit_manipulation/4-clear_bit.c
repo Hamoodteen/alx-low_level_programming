@@ -38,12 +38,12 @@ int bintodec(char *bin)
 	return (dec);
 }
 /**
- * set_bit - f
+ * clear_bit - f
  * @n: ptr
  * @index: int
- * Return: int
+ * Return: 1 or -1
 */
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int num;
 	char *temp;

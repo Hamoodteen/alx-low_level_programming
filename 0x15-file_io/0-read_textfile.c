@@ -26,10 +26,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(c);
 		return (0);
 	}
-	if ((letters) <= strlen(c))
+	if ((letters) < strlen(c))
 		p = write(STDOUT_FILENO, c, r);
 	else
-		return (0);
+		p = write(STDERR_FILENO, c, r);
 	if (p < 0)
 	{
 		free(c);

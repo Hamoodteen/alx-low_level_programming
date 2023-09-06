@@ -7,37 +7,44 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fd;
+	int f;
 	char *c;
-	char *f;
+	int r;
 	int p;
+	int e;
 
-	c = NULL;
 	if (filename == NULL)
 		return (0);
-	fd = fopen(filename, "r");
-	if (fd == NULL)
+	f = 0;
+	f = open(filename, O_RDONLY);
+	if (f == -1)
 		return (0);
+	c = NULL;
 	c = malloc(letters + 1);
 	if (c == NULL)
-	{
-		fclose(fd);
 		return (0);
-	}
-	f = fgets(c, (letters + 1), fd);
-	if (f == NULL)
+	r = 0;
+	r = read(f, c, letters);
+	if (r == -1)
 	{
 		free(c);
-		fclose(fd);
 		return (0);
 	}
-	if (letters < strlen(c))
-		p = fprintf(stdout, "%s", c);
+	if ((letters + 1) < strlen(c))
+		p = write(STDOUT_FILENO, c, r);
 	else
-		p = fprintf(stderr, "%s", c);
+		p = write(STDERR_FILENO, c, r);
 	if (p < 0)
+	{
+		free(c);
 		return (0);
+	}
+	e = close(f);
+	if (e == -1)
+	{
+		free(c);
+		return (0);
+	}
 	free(c);
-	fclose(fd);
 	return (p);
 }

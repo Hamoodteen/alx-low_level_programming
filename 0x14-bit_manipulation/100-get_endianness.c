@@ -1,4 +1,4 @@
-int get_endianness(void);
+int get_endianness(void)
 {
 int x = 1;
 char *a;

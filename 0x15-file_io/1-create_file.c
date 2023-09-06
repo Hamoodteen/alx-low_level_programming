@@ -8,8 +8,8 @@
 int create_file(const char *filename, char *text_content)
 {
 	FILE *f;
-	int p;
 	mode_t permissions = S_IRUSR | S_IWUSR;
+	int p;
 	int m;
 	int e;
 

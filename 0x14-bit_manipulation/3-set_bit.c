@@ -55,5 +55,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	temp[index] = '1';
 	num = bintodec(temp);
-	return (num);
+	return (1);
 }

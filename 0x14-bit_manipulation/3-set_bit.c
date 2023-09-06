@@ -51,7 +51,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	num = *n;
 	temp = malloc(sizeof(char) * 64);
 	temp = dectobin(num);
-	if (index > (sizeof(temp) - 1))
+	if (index > strlen(temp))
 		return (-1);
 	temp[index] = '1';
 	num = bintodec(temp);

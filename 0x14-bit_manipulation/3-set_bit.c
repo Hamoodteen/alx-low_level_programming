@@ -41,7 +41,7 @@ int bintodec(char *bin)
  * set_bit - f
  * @n: ptr
  * @index: int
- * Return: int
+ * Return: 1 or -1
 */
 int set_bit(unsigned long int *n, unsigned int index)
 {

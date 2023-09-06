@@ -37,9 +37,7 @@ void over(int a, char *g)
 int main(int argc, char **argv)
 {
 	char buf[1024];
-	int p, s, e1, e2;
-	FILE *f, *fl;
-	size_t r;
+	int p, s, e1, e2, f, fl, r;
 	mode_t permissions = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	p = s = e1 = e2 = r = 0;
@@ -49,23 +47,23 @@ int main(int argc, char **argv)
 		over(98, argv[1]);
 	if (argv[2] == NULL)
 		over(99, argv[2]);
-	f = fopen(argv[1], "r");
-	if (f == NULL)
+	f = open(argv[1], O_RDONLY);
+	if (f == -1)
 		over(98, argv[1]);
-	r = fread(buf, sizeof(char), sizeof(buf), f);
-	if (ferror(f))
+	r = read(f, buf, sizeof(buf));
+	if (r == -1)
 		over(98, argv[1]);
-	fl = fopen(argv[2], "w+");
-	if (fl == NULL)
+	fl = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
+	if (fl == -1)
 		over(99, argv[2]);
-	p = fprintf(fl, "%s", buf);
+	p = write(fl, buf, sizeof(buf));
 	if (p == -1)
 		over(99, argv[2]);
 	s = chmod(argv[2], permissions);
-	e1 = fclose(f);
+	e1 = close(f);
 	if (e1 == -1)
 		over(100, argv[1]);
-	e2 = fclose(fl);
+	e2 = close(fl);
 	if (e2 == -1)
 		over(100, argv[2]);
 	return (0);

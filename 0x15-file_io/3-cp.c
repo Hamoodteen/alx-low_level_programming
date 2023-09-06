@@ -9,22 +9,22 @@ void over(int a, char *g)
 {
 	if (a == 97)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	else if (a == 98)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", g);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", g);
 		exit(98);
 	}
 	else if (a == 99)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", g);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", g);
 		exit(99);
 	}
 	else if (a == 100)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", 2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", g);
 		exit(100);
 	}
 }
@@ -37,13 +37,13 @@ void over(int a, char *g)
 int main(int argc, char **argv)
 {
 	char buf[1024];
-	int p, s, e;
+	int p, s, e1, e2;
 	FILE *f;
 	FILE *fl;
 	size_t r;
 	mode_t permissions = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
-	p = s = e = r = 0;
+	p = s = e1 = e2 = r = 0;
 	if (argc != 3)
 	{
 		over(97, NULL);
@@ -69,10 +69,15 @@ int main(int argc, char **argv)
 		over(99, argv[2]);
 	}
 	s = chmod(argv[2], permissions);
-	e = fclose(fl);
-	if (e == -1)
+	e1 = fclose(f);
+	if (e1 == -1)
 	{
-		over(100, NULL);
+		over(100, argv[1]);
+	}
+	e2 = fclose(fl);
+	if (e2 == -1)
+	{
+		over(100, argv[2]);
 	}
 	return (0);
 }

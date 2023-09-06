@@ -8,7 +8,6 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fd;
-	char *g;
 	char *c;
 	int p;
 
@@ -18,11 +17,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = fopen(filename, O_RDONLY);
 	if (fd == NULL)
 		return (0);
-	g = fgets(c, letters, fd);
-	if (g == NULL)
+	p = printf("%s", fgets(c, letters, fd));
+	if ((p < 0) || (letters > strlen(c)))
 		return (0);
-	while (g != NULL)
-		p = printf("%s", c);
 	fclose(fd);
 	return (p);
 }

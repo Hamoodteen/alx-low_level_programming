@@ -56,7 +56,7 @@ int main(int argc, char **argv)
 	fl = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
 	if (fl == -1)
 		over(99, argv[2]);
-	p = write(fl, buf, sizeof(buf));
+	p = write(fl, buf, r);
 	if (p == -1)
 		over(99, argv[2]);
 	s = chmod(argv[2], permissions);

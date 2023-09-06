@@ -9,22 +9,22 @@ void over(int a, char *g)
 {
 	if (a == 97)
 	{
-		fprintf(stderr, "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
 		exit(97);
 	}
 	else if (a == 98)
 	{
-		fprintf(stderr, "Error: Can't read from file %s", g);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s", g);
 		exit(98);
 	}
 	else if (a == 99)
 	{
-		fprintf(stderr, "Error: Can't write to %s", g);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s", g);
 		exit(99);
 	}
 	else if (a == 100)
 	{
-		fprintf(stderr, "Error: Can't close fd %d", 2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", 2);
 		exit(100);
 	}
 }

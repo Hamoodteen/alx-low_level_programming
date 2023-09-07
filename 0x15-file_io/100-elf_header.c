@@ -6,8 +6,9 @@
  * @argv: char
  * Return: 0
 */
-int main(int __attribute__((__unused__)) argc,
-char __attribute__((__unused__)) **argv)
+int main(int argc, char **argv)
 {
+	(void)argc;
+	(void)argv;
 	return (0);
 }

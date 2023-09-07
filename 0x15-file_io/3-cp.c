@@ -29,28 +29,6 @@ void over(int a, char *g)
 	}
 }
 /**
- * chunks - f
- * @buf: char
- * @fl: int
- * @r: int
- * @g: char
- * Return: void
-*/
-void chunks(char buf[], int fl, int r, char *g)
-{
-	int p;
-
-	p = 0;
-	while (r > 0)
-	{
-		p = write(fl, buf, r);
-		if (p == -1)
-			over(99, g);
-		if (p != r)
-			over(99, g);
-	}
-}
-/**
  * main - f
  * @argc: int
  * @argv: char
@@ -59,10 +37,10 @@ void chunks(char buf[], int fl, int r, char *g)
 int main(int argc, char **argv)
 {
 	char buf[1024];
-	int s, e1, e2, f, fl, r;
+	int p, s, e1, e2, f, fl, r;
 	mode_t permissions = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
-	s = e1 = e2 = r = 0;
+	p = s = e1 = e2 = r = 0;
 	if (argc != 3)
 		over(97, NULL);
 	if (argv[1] == NULL)
@@ -78,7 +56,9 @@ int main(int argc, char **argv)
 	fl = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
 	if (fl == -1)
 		over(99, argv[2]);
-	chunks(buf, fl, r, argv[2]);
+	p = write(fl, buf, r);
+	if (p == -1)
+		over(99, argv[2]);
 	s = chmod(argv[2], permissions);
 	if (s == -1)
 		over(99, argv[2]);

@@ -7,7 +7,7 @@
   * @n: int
   * Return: address
   */
-dlistint_t *add_nodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *nn;
 	int copy;

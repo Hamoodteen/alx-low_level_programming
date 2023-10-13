@@ -10,5 +10,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	(void)head;
 	(void)index;
-	return (1);
+	return (-1);
 }

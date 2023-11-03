@@ -1,11 +1,9 @@
-#ifndef HASH_TABLES_H
-#define HASH_TABLES_H
+#ifndef _HASH_TABLE_H_
+#define _HASH_TABLE_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
-
-/* structs for tasks 0-6: */
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -36,8 +34,7 @@ typedef struct hash_table_s
 	hash_node_t **array;
 } hash_table_t;
 
-/* functions for tasks 0-6: */
-
 hash_table_t *hash_table_create(unsigned long int size);
+
 
 #endif

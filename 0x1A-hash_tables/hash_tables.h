@@ -36,10 +36,28 @@ typedef struct hash_table_s
 } hash_table_t;
 
 /**
+ * _memset - f
+ * @ptr: ptr
+ * @value: value
+ * @num: num
+ * Return: ptr
+*/
+void *_memset(void *ptr, int value, size_t num)
+{
+	unsigned char *p = (unsigned char *)ptr;
+	unsigned char v = (unsigned char)value;
+	size_t i;
+
+	for (i = 0; i < num; i++)
+		p[i] = v;
+	return (ptr);
+}
+
+/**
  * _calloc - f
  * @num_elements: n
  * @element_size: n
- * return: ptr
+ * Return: ptr
 */
 void *_calloc(size_t num_elements, size_t element_size)
 {
@@ -47,7 +65,7 @@ void *_calloc(size_t num_elements, size_t element_size)
 	void *ptr = malloc(total_size);
 
 	if (ptr != NULL)
-		memset(ptr, 0, total_size);
+		_memset(ptr, 0, total_size);
 	return (ptr);
 }
 

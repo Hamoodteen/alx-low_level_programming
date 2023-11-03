@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -33,6 +34,17 @@ typedef struct hash_table_s
 	unsigned long int size;
 	hash_node_t **array;
 } hash_table_t;
+
+
+void *my_calloc(size_t num_elements, size_t element_size)
+{
+	size_t total_size = num_elements * element_size;
+	void *ptr = malloc(total_size);
+
+	if (ptr != NULL)
+		memset(ptr, 0, total_size);
+	return (ptr);
+}
 
 hash_table_t *hash_table_create(unsigned long int size);
 

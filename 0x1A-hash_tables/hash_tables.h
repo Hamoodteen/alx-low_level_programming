@@ -1,11 +1,9 @@
-#ifndef HASH_TABLES_H
-#define HASH_TABLES_H
+#ifndef _HASH_TABLE_H_
+#define _HASH_TABLE_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
-
-/* structs for tasks 0-6: */
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -36,8 +34,41 @@ typedef struct hash_table_s
 	hash_node_t **array;
 } hash_table_t;
 
-/* functions for tasks 0-6: */
+/**
+ * _memset - f
+ * @ptr: ptr
+ * @value: value
+ * @num: num
+ * Return: ptr
+*/
+void *_memset(void *ptr, int value, size_t num)
+{
+	unsigned char *p = (unsigned char *)ptr;
+	unsigned char v = (unsigned char)value;
+	size_t i;
+
+	for (i = 0; i < num; i++)
+		p[i] = v;
+	return (ptr);
+}
+
+/**
+ * _calloc - f
+ * @num_elements: n
+ * @element_size: n
+ * Return: ptr
+*/
+void *_calloc(size_t num_elements, size_t element_size)
+{
+	size_t total_size = num_elements * element_size;
+	void *ptr = malloc(total_size);
+
+	if (ptr != NULL)
+		_memset(ptr, 0, total_size);
+	return (ptr);
+}
 
 hash_table_t *hash_table_create(unsigned long int size);
+
 
 #endif

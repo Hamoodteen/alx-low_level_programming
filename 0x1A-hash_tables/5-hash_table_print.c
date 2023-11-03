@@ -6,16 +6,16 @@
 */
 void hash_table_print(const hash_table_t *ht)
 {
-	int i;
+	size_t i;
 
 	printf("{");
 	for (i = 0; i < ht->size - 1; i++)
 	{
 		if (ht->array[i])
 		{
-			printf("'%d': '%s', ", i, ht->array[i]->value);
+			printf("'%ld': '%s', ", i, ht->array[i]->value);
 		}
 	}
 	if (ht->array[i])
-		printf("'%d': '%s'}");
+		printf("'%ld': '%s'}", i, ht->array[i]->value);
 }

@@ -35,8 +35,13 @@ typedef struct hash_table_s
 	hash_node_t **array;
 } hash_table_t;
 
-
-void *my_calloc(size_t num_elements, size_t element_size)
+/**
+ * _calloc - f
+ * @num_elements: n
+ * @element_size: n
+ * return: ptr
+*/
+void *_calloc(size_t num_elements, size_t element_size)
 {
 	size_t total_size = num_elements * element_size;
 	void *ptr = malloc(total_size);

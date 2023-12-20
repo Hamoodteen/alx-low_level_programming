@@ -6,7 +6,7 @@ RM = clean oclean
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	rm -f $(OBJ) $(NAME)
+	rm -f $(OBJ) $(NAME) *~ .*~
 oclean:
 	rm -f $(OBJ)
 fclean: $(RM)

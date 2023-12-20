@@ -8,6 +8,6 @@ all: $(OBJ)
 clean:
 	rm -f $(OBJ) $(NAME)
 oclean:
-	rm -f $(OBJS)
+	rm -f $(OBJ)
 fclean: $(RM)
 re: fclean all

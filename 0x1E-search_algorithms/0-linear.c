@@ -9,8 +9,20 @@
 */
 int linear_search(int *array, size_t size, int value)
 {
-	(void)array;
-	(void)size;
-	(void)value;
-	return (0);
+	size_t f = 0, i;
+
+	for (i = 0; i != size; i++)
+	{
+		printf("Value checked array[%li] = [%i]\n", i, array[i]);
+		if (array[i] == value)
+		{
+			printf("Found %li at index: %i\n", i, value);
+			f = 1;
+			break;
+		}
+	}
+	if (f == 1)
+		return (value);
+	else
+		return (-1);
 }
